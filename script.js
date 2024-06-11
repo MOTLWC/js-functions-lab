@@ -265,7 +265,7 @@ Complete the exercise in the space below:
 const getThreeLetters = (list) => list.slice(0,3);
 
 function createUsername(firstName, secondName){
-    const nameLength = firstName.length + secondName.length;
+    const nameLength = firstName.length + secondName.length /*-1*/ /*Personally having re-read the question i think this is the correct way to do it, but if you meant to specify the last array index you can uncomment the one before this*/;
     const username = `${getThreeLetters(firstName)}${getThreeLetters(secondName)}${nameLength}`;
     return username;
 }
